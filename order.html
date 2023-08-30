@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zeynep Kaya">
+    <meta name="email" content="kaya0026@algonquinlive.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mama's Bakery</title>
+</head>
+<body>
+    <main>
+        <!-- circle for decoration at the back -->
+        <div class="background-circle"></div>
+        <!-- Header main -->
+        <header class="header-container">
+            <a href="index.html"><img src="pics/mamas-bakery.jpg" class="logo" alt="Mama's bakery logo"></a>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Content of the page -->
+
+        <!-- My container that holds a form for payment and a picture  -->
+        <!-- I took some help from this tutorial on how to make a form on Youtube https://www.youtube.com/watch?v=5VC_8ddnFiU -->
+        <section class="form-container">
+            <div class="title-form">
+                <h2 class="form-title">Payment Details</h2>
+                <form action="" class="checkout">
+                    <div class="user-input">
+                        <label for="name">Name on the card</label>
+                        <input type="text" name="name" id="name" placeholder="Please enter your name and surname">
+                    </div>
+                    <div class="user-input">
+                        <label for="card">Card Number</label>
+                        <input type="text" name="card" id="card" placeholder="1111-1111-1111-1111">
+                    </div>
+                    <div class="input-container">
+                        <div class="user-input">
+                            <label for="expire-date">Expire Date</label>
+                            <input type="text" name="expire-date" id="expire-date" placeholder="03-23">
+                        </div>
+                        <div class="user-input">
+                            <label for="cvc">CVC</label>
+                            <input type="text" name="cvc" id="cvc" placeholder="***">
+                        </div>
+                    </div>
+                    <input type="button" value="Checkout">
+                </form>
+            </div>
+            <img src="pics/checkout.png" alt="illustration for checkout">
+        </section>
+    </main>
+    <!-- go back sign that takes you back the menu page -->
+    <div class="go-back">
+        <h4><a href="/menu.html"> &larr; Go back</a></h4>
+    </div>
+         <!-- footer of the page  -->
+        <footer class="footer-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">Services</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <address id="contact">
+                    <h4>1195 Benton Street Kitchener, Ontario <br> Call us! <a href="tel://1613748321">+1 613 748 321</a></h4>
+                    <a href="mailto:mamasbakery@sweetbakery.ca?subject=Hi Mama's bakery&body=I want some desserts!">mamasbakery@sweetbakery.ca</a>
+                </address>   
+                <p class="copyright">Mama's Bakery © 2022</p>         
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
